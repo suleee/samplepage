@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="150.323px" height="85.25px" viewBox="0 0 150.323 85.25" enable-background="new 0 0 150.323 85.25" xml:space="preserve">
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="75.1616" y1="84.0967" x2="75.1616" y2="1.0972">
+		<stop  offset="0" style="stop-color:#FEBA40"/>
+		<stop  offset="1" style="stop-color:#FFCD41"/>
+	</linearGradient>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_1_)" stroke="#FCBC3F" d="M4.661,1.097h141c2.209,0,4,1.791,4,4v75
+		c0,2.209-1.791,4-4,4h-141c-2.209,0-4-1.791-4-4v-75C0.661,2.888,2.452,1.097,4.661,1.097z"/>
+</g>
+<rect x="44.447" y="34.02" fill-rule="evenodd" clip-rule="evenodd" fill="none" width="73.015" height="25.154"/>
+<text transform="matrix(1 0 0 1 44.4468 50.9297)" fill="#FFFFFF" font-family="'Nunito-Bold'" font-size="24">Login</text>
+</svg>

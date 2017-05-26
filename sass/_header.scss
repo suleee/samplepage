@@ -1,0 +1,62 @@
+/*html start*/
+
+html {
+	font-size: 1rem;
+	color: $body-font;
+}
+
+body {
+	margin: 0 auto;
+	font-family: 'Nunito', 'Helvetica', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+section {
+	margin: 0 $twenity;
+}
+
+p {
+	margin: 0;
+}
+
+.logos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+	padding-top: $fifty;
+	@media all and (min-width: $breakpoint-m) {
+		max-width: 570px;
+		margin: 0 auto;
+		justify-content: flex-start;
+	}
+	@media all and (min-width: $breakpoint-tablet) {
+		max-width: 700px;
+		// padding: 50px 20px 0 20px;
+	}
+}
+
+.papaya-logo {
+	padding-top: 15px;
+	padding-left: 8%;
+	@media all and (min-width: $breakpoint-tablet) {
+		padding-left: 50px;
+	}
+}
+
+.latale-logo img {
+	width: 111px;
+	@media all and (min-width: $breakpoint-m) {
+	width: 8.57rem;}
+}
+
+.papaya-logo img {
+	width: 150px;
+	@media all and (min-width: $breakpoint-m) {
+	width: 12.86rem;}
+}

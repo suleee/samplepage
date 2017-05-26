@@ -1,0 +1,222 @@
+.sign-container {
+    .character {
+        @media all and (min-width: $breakpoint-m) {
+            background: url("../../img/character02.png") no-repeat 30% -3rem;
+            background-size: cover;
+        }
+        @media all and (min-width: $breakpoint-tablet) {
+            background: url("../../img/character02.png") no-repeat 25% -3rem;
+        }
+        @media all and (min-width: 1024px) {
+            background: url("../../img/character02.png") no-repeat 5% -3rem;
+        }
+    }
+    .main-section {
+        text-align: center;
+        margin: 0 20px;
+        @media all and (min-width: $breakpoint-m) {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 570px;
+            margin: 0 auto;
+        }
+        @media all and (min-width: $breakpoint-tablet) {
+            max-width: 700px;
+        }
+    }
+    .header-text {
+        padding-top: 30px;
+        @media all and (min-width: $breakpoint-m) {
+            text-align: left;
+        }
+        h1 {
+            text-transform: uppercase;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+    }
+    .header-p {
+        font-size: 18px;
+        padding-bottom: $ten;
+    }
+    .ogp-text {
+        font-size: 1rem;
+        line-height: 1rem;
+        @media all and (min-width: $breakpoint-m) {
+            text-align: left;
+            width: 450px;
+        }
+    }
+    .ogp {
+        margin: 20px 0;
+        img {
+            width: 31px;
+        }
+    }
+    .verification {
+        display: flex;
+        flex-wrap: wrap;
+        height: 31px;
+        justify-content: center;
+        margin-bottom: $ten;
+        p {
+            color: $blue;
+            text-transform: uppercase;
+            padding-left: $ten;
+            padding-top: $five;
+        }
+    }
+    .ogpid {
+        width: 280px;
+        height: $forty;
+        border-radius: 8px;
+        opacity: 0.85;
+        background-color: #362F2D;
+        border: 1px solid #424242;
+        margin: 0 auto;
+        text-align: left;
+        @media all and (min-width: $breakpoint-m) {
+            margin: 0;
+        }
+        span {
+            color: $yellow;
+            text-transform: lowercase;
+        }
+        p {
+            color: white;
+            text-transform: uppercase;
+            padding: 9px;
+        }
+    }
+    .border {
+        background: url("../../img/sign-bigboard.png");
+        text-align: center;
+        background-size: 370px 450px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 495px;
+        position: relative;
+        @media all and (min-width: $breakpoint-m) {
+            background-position: left;
+            max-width: 570px;
+            margin: 0 auto;
+        }
+        @media all and (min-width: $breakpoint-tablet) {
+            max-width: 700px;
+        }
+        .b-menu {
+            width: 320px;
+            display: flex;
+            position: absolute;
+            justify-content: space-around;
+            top: 64px;
+            left: 10%;
+            @media all and (min-width: 475px) {
+                left: 18%;
+            }
+            @media all and (min-width: $breakpoint-m) {
+                left: 23px;
+            }
+            h2 {
+                width: 45%;
+                text-align: center;
+            }
+        }
+    }
+    #tab1 {
+        background: url("../../img/sign-border01.svg");
+        background-size: 410px 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+        width: 350px;
+        margin: 0 auto;
+        padding-top: 100px;
+        @media all and (min-width: $breakpoint-m) {
+            margin: 8px;
+        }
+    }
+    .login-account {
+        display: none;
+    }
+    #tab2 {
+        background: url("../../img/sign-border02.svg");
+        background-size: 410px 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+        width: 350px;
+        margin: 0 auto;
+        padding-top: 100px;
+        position: absolute;
+        top: -7px;
+        @media all and (min-width: $breakpoint-m) {
+            margin: 8px;
+        }
+    }
+    .login {
+        color: #ABA8A7;
+    }
+    .input-boxes {
+        position: relative;
+        margin-top: $twenity;
+        input {
+            @include input;
+            margin-bottom: $ten;
+        }
+        .username,
+        .password,
+        .email,
+        .confirmation {
+            position: absolute;
+            left: $fortyfive;
+        }
+        .username {
+            bottom: 187px;
+        }
+        .password {
+            bottom: 135px;
+        }
+        .email {
+            bottom: 80px;
+        }
+        .confirmation {
+            bottom: 22px;
+        }
+    }
+    .check {
+        max-width: 280px;
+        padding-bottom: $ten;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        p {
+            width: 93%;
+            text-align: left;
+            font-size: 12px;
+            line-height: 1rem;
+        }
+    }
+    ul.tabs li {
+        display: inline-block;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+    .tab-content {
+        display: none;
+    }
+    .tab-content.current {
+        display: inherit;
+    }
+    .create-btn {
+        background-image: url('../../img/signin-default.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 47px;
+        width: 280px;
+        margin: 0 auto;
+        &:hover {
+            background-image: url('../../img/signin-hover.svg');
+        }
+    }
+}

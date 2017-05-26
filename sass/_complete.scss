@@ -1,0 +1,149 @@
+.complete-container {
+    .logos {
+        justify-content: center;
+    }
+    .header-text {
+        text-align: center;
+        margin-top: 30px;
+        padding: 0 20px;
+        @media all and (min-width: $breakpoint-tablet) {
+            padding: 0;
+        }
+    }
+    .header-p1 {
+        padding: 15px 0;
+    }
+    .header-p2 {
+        color: #6D1800;
+        padding-bottom: 25px;
+    }
+    .video-container {
+        text-align: center;
+        position: relative;
+    }
+    .video {
+        width: 100%;
+        @media all and (min-width: $breakpoint-tablet) {
+            max-width: $sevenhundred;
+            margin: 0 auto;
+        }
+    }
+    .forum {
+        text-align: center;
+        p {
+            @include subp;
+            padding: 25px 20px 15px 20px;
+        }
+        a {
+            color: $body-font;
+        }
+        img {
+            width: 180px;
+        }
+        @media all and (min-width: $breakpoint-tablet) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 700px;
+            padding-bottom: 50px;
+            p {
+                width: 46%;
+                text-align: left;
+                padding: 25px 0px 15px 0px;
+            }
+        }
+    }
+    .forum-btn-container {
+        @media all and (min-width: $breakpoint-m) {
+            display: flex;
+            justify-content: space-between;
+            width: 420px;
+            margin: 0 auto;
+        }
+        @media all and (min-width: $breakpoint-tablet) {
+            width: 54%;
+            padding-top: 25px;
+        }
+    }
+    .fqa-btn,
+    .forum-btn {
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 54px;
+        width: 180px;
+        margin: 0 auto;
+    }
+    .forum-btn {
+        background-image: url('../../img/forum-default.svg');
+        &:hover {
+            background-image: url('../../img/forum-hover.svg');
+        }
+    }
+    .fqa-btn {
+        background-image: url('../../img/fqa-default.svg');
+        &:hover {
+            background-image: url('../../img/fqa-hover.svg');
+        }
+        margin-top: 10px;
+        padding-bottom: 40px;
+        @media all and (min-width: $breakpoint-m) {
+            margin-top: 0;
+        }
+    }
+    .playicon {
+        position: absolute;
+        bottom: 24%;
+        left: 18%;
+        display: flex;
+        height: 29px;
+        max-width: 300px;
+        @media all and (min-width: 400px) {
+            bottom: 25%;
+            left: 27%;
+        }
+        @media all and (min-width: 500px) {
+            bottom: 26%;
+            left: 32%;
+        }
+        @media all and (min-width: $breakpoint-m) {
+            bottom: 27%;
+            left: 31%;
+            height: 36px;
+        }
+        @media all and (min-width: $breakpoint-tablet) {
+            bottom: 27%;
+            left: 36%;
+        }
+        p {
+            padding-top: 5px;
+            padding-left: 10px;
+            font-size: 14px;
+            color: #FFEBC6;
+            &:hover {
+                color: white;
+            }
+            @media all and (min-width: $breakpoint-m) {
+                font-size: 18px;
+                padding-top: 12px;
+            }
+            @media all and (min-width: $breakpoint-tablet) {
+                font-size: 18px;
+            }
+        }
+        .icon {
+            background-image: url('../../img/play-default.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 20px;
+            width: 20px;
+            margin: 0 auto;
+            margin-top: 4px;
+            @media all and (min-width: $breakpoint-m) {
+                height: 40px;
+                width: 40px;
+                margin-top: 0px;
+            }
+        }
+    }
+}

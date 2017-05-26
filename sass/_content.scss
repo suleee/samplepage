@@ -1,0 +1,20 @@
+.bg {
+	@include bg-img;
+}
+
+.pattern {
+	@include pattern;
+}
+
+h1 {
+	font-family: $main-title;
+	font-size: 2.57rem;
+	color: $head-font;
+	@media all and (min-width: $breakpoint-tablet) {
+		font-size: 48px;
+	}
+}
+
+p {
+	@include subttitle;
+}

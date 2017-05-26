@@ -1,0 +1,36 @@
+@mixin media($width) {
+	@media all and (min-width: $width) {
+		@content;
+	}
+}
+
+@mixin bg-img {
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .6) 80%), url("../../img/bg02.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+@mixin pattern {
+	background: url("../../img/bg-pattern.png") 0 0 repeat;
+	width: 100%;
+}
+
+@mixin input {
+	width: 280px;
+	height: 40px;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+}
+
+@mixin subttitle {
+	font-size: $twenity;
+	line-height: $twenity;
+	color: $head-font;
+	font-weight: 400;
+}
+
+@mixin subp {
+	font-size: 1rem;
+	line-height: $sixteen;
+	color: $body-font;
+	font-weight: 300;
+}
